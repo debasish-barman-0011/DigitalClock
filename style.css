@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #010809;
+}
+
+h2 {
+    font-size: 26px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#time {
+    display: flex;
+}
+
+#time div {
+    position: relative;
+    margin: 0px 10px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+
+#time div span {
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 100px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    z-index: 10;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.4);
+}
+
+#hours {
+    background: #FF671F;
+    color: #fff;
+}
+
+#gerua {
+    color: #FF671F;
+}
+
+#minutes {
+    background: #ffffff;
+    color: #06038D;
+}
+
+#sada {
+    color: #fff;
+}
+
+#seconds {
+    background: #046A38;
+    color: #6A0436;
+}
+
+#sabuj {
+    color: #046A38;
+}
+
+#ampm {
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    color: #06038D;
+    border-radius: 50%;
+}
+
+#time div span:nth-child(2) {
+    height: 30px;
+    font-size: 16px;
+    box-shadow: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media only screen and (max-width: 550px) {
+    h2 {
+        font-size: 16px;
+    }
+
+    #time div span {
+        font-size: 24px;
+        height: 40px;
+        width: 65px;
+
+    }
+
+    #time div {
+        margin: 0px 2px;
+    }
+
+    #time div span:nth-child(2) {
+        font-size: 12px;
+    }
+}
+
+/* ANIMATION PART */
+/* @keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#ampm,
+p {
+    animation: fadeInOut 2s infinite;
+} */
+
+
+footer {
+    height: 60px;
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
